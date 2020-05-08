@@ -69,7 +69,7 @@ class OrderController extends Controller
         $orderProducts[] = [
             'product_id' =>$item['product']['id'],
             'order_id' => $order_id,
-            'quantity' => $item['product']['quantity'],
+            'quantity' => $item['quantity'],
             'price' => $item['product']['price'],
         ];
     	}
