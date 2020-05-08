@@ -1,29 +1,49 @@
-# README #
+# Getting started
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Installation
 
-### What is this repository for? ###
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/6.x/installation#installation)
+
+### Installation ###
 
 * Quick summary
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Clone the repository
 
-### Contribution guidelines ###
+    git clone https://github.com/axhem/yummi.git
 
-* Writing tests
-* Code review
-* Other guidelines
+Switch to the repo folder
 
-### Who do I talk to? ###
+    cd yummi
 
-* Repo owner or admin
-* Other community or team contact
+Install all the dependencies using composer
+
+    composer install
+
+Copy the example env file and make the required configuration changes in the .env file
+
+    cp .env.example .env
+
+Generate a new application key
+
+    php artisan key:generate
+
+
+
+Run the database migrations (**Set the database connection in .env before migrating**)
+
+    php artisan migrate
+
+ Run the seed
+
+    php artisan db:seed
+    
+Start the local development server
+
+    php artisan serve
+    
+
+You can now access the server at http://localhost:8000
