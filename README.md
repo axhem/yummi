@@ -8,7 +8,7 @@ Please check the official laravel installation guide for server requirements bef
 
 * Quick summary
 * Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
 
 
 Clone the repository
