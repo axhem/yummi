@@ -48,7 +48,9 @@ Start the local development server
 
 You can now access the server at http://localhost:8000
 
+    
 Minor feature testing
 
-  vendor/bin/phpunit
+     vendor/bin/phpunit
+
 
